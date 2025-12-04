@@ -1,73 +1,73 @@
 # Celo Token Claimer
 
-Celo blockchain üzerinde çalışan bir dApp örneği. Minipay ve diğer Celo cüzdanlarıyla entegre çalışır. Kullanıcılar cüzdanlarını bağlayarak ücretsiz token claim edebilirler.
+An example dApp running on the Celo blockchain. It works integrated with Minipay and other Celo wallets. Users can connect their wallets to claim free tokens.
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- ✅ Celo Mainnet ve Alfajores Testnet desteği
-- ✅ Token Claimer - Her cüzdan için bir kez token claim
-- ✅ Minipay cüzdan entegrasyonu
-- ✅ RainbowKit ile kolay cüzdan bağlantısı
-- ✅ Wagmi ile blockchain etkileşimi
-- ✅ Next.js 16 ile modern React uygulaması
-- ✅ TypeScript desteği
-- ✅ Tailwind CSS ile modern ve responsive UI
-- ✅ Header ile network ve cüzdan bilgisi gösterimi
+- ✅ Celo Mainnet and Alfajores Testnet support
+- ✅ Token Claimer - One-time token claim per wallet
+- ✅ Minipay wallet integration
+- ✅ Easy wallet connection with RainbowKit
+- ✅ Blockchain interaction with Wagmi
+- ✅ Modern React application with Next.js 16
+- ✅ TypeScript support
+- ✅ Modern and responsive UI with Tailwind CSS
+- ✅ Network and wallet information display via Header
 
-## Kurulum
+## Installation
 
-1. Bağımlılıkları yükleyin:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. WalletConnect Project ID'yi ayarlayın:
-   - `app/providers.tsx` dosyasındaki `YOUR_PROJECT_ID` değerini değiştirin
-   - WalletConnect Cloud'dan ücretsiz bir Project ID alın: https://cloud.walletconnect.com
+2. Set up the WalletConnect Project ID:
+   - Change the `YOUR_PROJECT_ID` value in `app/providers.tsx`
+   - Get a free Project ID from WalletConnect Cloud: [https://cloud.walletconnect.com](https://cloud.walletconnect.com)
 
-3. Geliştirme sunucusunu başlatın:
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Kullanım
+## Usage
 
-1. "Cüzdanınızı Bağlayın" butonuna tıklayın
-2. Minipay veya desteklenen diğer cüzdanları seçin
-3. Cüzdanınızı bağlayın
-4. Celo Mainnet veya Alfajores Testnet'e geçin
-5. "Token Claimer" bölümünden token claim edin (her cüzdan için bir kez)
+1. Click the "Connect Wallet" button
+2. Select Minipay or other supported wallets
+3. Connect your wallet
+4. Switch to Celo Mainnet or Alfajores Testnet
+5. Claim tokens from the "Token Claimer" section (once per wallet)
 
-## Desteklenen Cüzdanlar
+## Supported Wallets
 
 - Minipay
 - Valora
 - MetaMask
-- WalletConnect uyumlu tüm cüzdanlar
+- All WalletConnect compatible wallets
 
-## Teknolojiler
+## Technologies
 
 - **Next.js 16** - React framework
 - **Wagmi** - React Hooks for Ethereum
-- **RainbowKit** - Cüzdan bağlantı UI
-- **@celo/rainbowkit-celo** - Celo chain desteği
-- **TypeScript** - Tip güvenliği
+- **RainbowKit** - Wallet connection UI
+- **@celo/rainbowkit-celo** - Celo chain support
+- **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
 
-## Geliştirme
+## Development
 
-Projeyi geliştirmek için:
+To develop the project:
 
 ```bash
-# Geliştirme modu
+# Development mode
 npm run dev
 
 # Production build
 npm run build
 
-# Production sunucusu
+# Production server
 npm start
 
 # Linting
@@ -76,27 +76,27 @@ npm run lint
 
 ## 📦 Deployment
 
-Bu proje Vercel, Netlify veya diğer Next.js destekleyen platformlara deploy edilebilir.
+This project can be deployed to Vercel, Netlify, or other platforms supporting Next.js.
 
-### Vercel ile Deploy
+### Deploy with Vercel
 
-1. [Vercel](https://vercel.com) hesabınıza giriş yapın
-2. "New Project" butonuna tıklayın
-3. GitHub repository'nizi seçin
-4. Environment variables ekleyin (gerekirse)
-5. Deploy butonuna tıklayın
+1. Log in to your [Vercel](https://vercel.com) account
+2. Click the "New Project" button
+3. Select your GitHub repository
+4. Add environment variables (if necessary)
+5. Click the Deploy button
 
-## 🔗 Linkler
+## 🔗 Links
 
-- **GitHub Repository**: https://github.com/ahakanakar/CeloWorkshopApp
-- **WalletConnect Cloud**: https://cloud.walletconnect.com
+- **GitHub Repository**: [https://github.com/ahakanakar/CeloWorkshopApp](https://github.com/ahakanakar/CeloWorkshopApp)
+- **WalletConnect Cloud**: [https://cloud.walletconnect.com](https://cloud.walletconnect.com)
 
-## 📝 Notlar
+## 📝 Notes
 
-- Token Claimer özelliği şu anda localStorage kullanarak demo amaçlı çalışmaktadır
-- Gerçek bir uygulamada smart contract ile entegre edilebilir
-- WalletConnect Project ID gereklidir (ücretsiz alınabilir)
+- The Token Claimer feature currently works using localStorage for demo purposes
+- It can be integrated with a smart contract in a real application
+- A WalletConnect Project ID is required (can be obtained for free)
 
-## Lisans
+## License
 
 MIT
